@@ -1,0 +1,5 @@
+Google Chrome native Tezbar port. Original Raycast extension by Codely and contributors, MIT.
+Upstream: https://github.com/raycast/extensions/tree/f8e165c85832e16d9c24152bbb98b4871b954fc8/extensions/google-chrome
+Original source snapshot retained in upstream/. Chrome icon copied byte-for-byte from upstream assets/chrome-icon.png.
+Rust implementation copyright (c) 2026 Tezbar contributors, MIT.
+Third-party dependency license documents are retained in licenses/. No Raycast runtime or JavaScript application renderer is shipped.

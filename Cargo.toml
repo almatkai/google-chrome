@@ -1,0 +1,22 @@
+[package]
+name = "tezbar-google-chrome"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "process", "io-util", "time"] }
+tezbar-extension-sdk = { git = "https://github.com/almatkai/tezbar-extension-sdk-rust", rev = "1a11afc14693cc6463e0b95ae7d61991b4a60427" }
+url = "2"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+strip = true
+lto = "thin"
+
